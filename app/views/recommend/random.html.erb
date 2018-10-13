@@ -3,16 +3,12 @@
     <% @spots.each do |spot| %>
       <div class="posts-index-item">
         <!-- post.contentを使って書き換えてください -->
-        <%= link_to(spot.spot_one) %>
-        <% spot.url_one %>
+        <%= link_to(spot.spot_one, spot.url_one) %>
         
-        <%= spot.spot_two %>
-        <% spot.url_two %>
+        <%= link_to(spot.spot_two, spot.url_two) %>
         
-        <%= spot.spot_three %>
-        <% spot.url_three %>
+        <%= link_to(spot.spot_three, spot.url_three) %>
         
-        <%= spot.spot_four %>
-        <% spot.url_four %>
+        <%= link_to(spot.spot_four, spot.url_four) %>
       </div>
     <% end %>
